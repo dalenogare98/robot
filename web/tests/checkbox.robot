@@ -18,8 +18,8 @@ Marcando opção com Id
 Marcando opção com CSS Selector
     [tags]      ironman
     Go To                           ${url}/checkboxes
-    Select Checkbox                 css:input[value='iron-man']
-    Checkbox Should Be Selected     css:input[value='iron-man']
+    Select Checkbox                 ${check_iron}
+    Checkbox Should Be Selected     ${check_iron}
 
 Marcando opção com Xpath
     [tags]      Xpath
