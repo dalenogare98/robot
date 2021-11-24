@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.1 on win32)" generated="20211124 11:37:25.025" rpa="false" schemaversion="2">
+<suite id="s1" name="Hsm" source="C:\MedPass\robot\web\tests\hsm.robot">
+<test id="s1-t1" name="Pegando pessoa aleatória">
+<status status="FAIL" starttime="20211124 11:37:25.311" endtime="20211124 11:37:25.313">Test case contains no keywords.</status>
+</test>
+<test id="s1-t2" name="Cadastro no HSM">
+<kw name="Nova sessão" library="hsmBase" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211124 11:37:25.316" level="INFO">Opening browser 'chrome' to base url 'http://hsmonline.com.br/'.</msg>
+<status status="PASS" starttime="20211124 11:37:25.315" endtime="20211124 11:37:28.727"/>
+</kw>
+<status status="PASS" starttime="20211124 11:37:25.315" endtime="20211124 11:37:28.727"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 11:37:28.728" endtime="20211124 11:37:28.728"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211124 11:37:29.743" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211124 11:37:28.729" endtime="20211124 11:37:29.743"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${name}</var>
+<arg>Joao</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211124 11:37:29.744" level="INFO">${name} = Joao</msg>
+<status status="PASS" starttime="20211124 11:37:29.744" endtime="20211124 11:37:29.744"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211124 11:37:30.751" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211124 11:37:29.744" endtime="20211124 11:37:30.751"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20211124 11:37:30.752" endtime="20211124 11:37:30.752"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211124 11:37:31.764" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211124 11:37:30.753" endtime="20211124 11:37:31.764"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211124 11:37:34.771" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211124 11:37:31.765" endtime="20211124 11:37:34.771"/>
+</kw>
+<kw name="Encerra sessão" library="hsmBase" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211124 11:37:34.950" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211124 11:37:34.773" endtime="20211124 11:37:34.950"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211124 11:37:34.951" endtime="20211124 11:37:37.046"/>
+</kw>
+<status status="PASS" starttime="20211124 11:37:34.772" endtime="20211124 11:37:37.046"/>
+</kw>
+<status status="PASS" starttime="20211124 11:37:25.314" endtime="20211124 11:37:37.047"/>
+</test>
+<status status="FAIL" starttime="20211124 11:37:25.027" endtime="20211124 11:37:37.048"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Hsm">Hsm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
