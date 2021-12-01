@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.1 on win32)" generated="20211125 11:45:19.040" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.8.1 on win32)" generated="20211201 11:36:56.234" rpa="false" schemaversion="2">
 <suite id="s1" name="Hsm" source="C:\MedPass\robot\web\tests\hsm.robot">
 <test id="s1-t1" name="Gerando pessoa e cadastrando no HSM">
 <kw name="Nova sessão" library="hsmBase" type="SETUP">
@@ -7,268 +7,268 @@
 <arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211125 11:45:19.361" level="INFO">Opening browser 'chrome' to base url 'https://www.4devs.com.br/gerador_de_pessoas'.</msg>
-<status status="PASS" starttime="20211125 11:45:19.361" endtime="20211125 11:45:24.894"/>
+<msg timestamp="20211201 11:36:56.486" level="INFO">Opening browser 'chrome' to base url 'https://www.4devs.com.br/gerador_de_pessoas'.</msg>
+<status status="PASS" starttime="20211201 11:36:56.485" endtime="20211201 11:37:04.022"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20211125 11:45:24.895" endtime="20211125 11:45:25.033"/>
+<status status="PASS" starttime="20211201 11:37:04.022" endtime="20211201 11:37:04.152"/>
 </kw>
-<status status="PASS" starttime="20211125 11:45:19.360" endtime="20211125 11:45:25.033"/>
+<status status="PASS" starttime="20211201 11:36:56.485" endtime="20211201 11:37:04.152"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>id:bt_gerar_pessoa</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:25.034" level="INFO">Clicking button 'id:bt_gerar_pessoa'.</msg>
-<status status="PASS" starttime="20211125 11:45:25.033" endtime="20211125 11:45:25.119"/>
+<msg timestamp="20211201 11:37:04.153" level="INFO">Clicking button 'id:bt_gerar_pessoa'.</msg>
+<status status="PASS" starttime="20211201 11:37:04.153" endtime="20211201 11:37:04.210"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:27.138" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211125 11:45:25.125" endtime="20211125 11:45:27.138"/>
+<msg timestamp="20211201 11:37:06.214" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211201 11:37:04.211" endtime="20211201 11:37:06.214"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${fullName}</var>
 <arg>id:nome</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:27.188" level="INFO">${fullName} = Elaine Simone Viana</msg>
-<status status="PASS" starttime="20211125 11:45:27.138" endtime="20211125 11:45:27.188"/>
+<msg timestamp="20211201 11:37:06.241" level="INFO">${fullName} = Iago Vitor Monteiro</msg>
+<status status="PASS" starttime="20211201 11:37:06.214" endtime="20211201 11:37:06.241"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${user.email}</var>
 <arg>id:email</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:27.213" level="INFO">${user.email} = elainesimoneviana..elainesimoneviana@gap.com.br</msg>
-<status status="PASS" starttime="20211125 11:45:27.188" endtime="20211125 11:45:27.213"/>
+<msg timestamp="20211201 11:37:06.261" level="INFO">${user.email} = iiagovitormonteiro@leonardocordeiro.com</msg>
+<status status="PASS" starttime="20211201 11:37:06.241" endtime="20211201 11:37:06.261"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${document}</var>
 <arg>id:cpf</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:27.236" level="INFO">${document} = 954.653.973-22</msg>
-<status status="PASS" starttime="20211125 11:45:27.214" endtime="20211125 11:45:27.236"/>
+<msg timestamp="20211201 11:37:06.280" level="INFO">${document} = 135.106.701-08</msg>
+<status status="PASS" starttime="20211201 11:37:06.262" endtime="20211201 11:37:06.280"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${birthDate}</var>
 <arg>id:data_nasc</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:27.260" level="INFO">${birthDate} = 11/06/1966</msg>
-<status status="PASS" starttime="20211125 11:45:27.236" endtime="20211125 11:45:27.260"/>
+<msg timestamp="20211201 11:37:06.301" level="INFO">${birthDate} = 12/11/1980</msg>
+<status status="PASS" starttime="20211201 11:37:06.280" endtime="20211201 11:37:06.301"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${password}</var>
 <arg>id:senha</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:27.280" level="INFO">${password} = ifaDJ6YGns</msg>
-<status status="PASS" starttime="20211125 11:45:27.260" endtime="20211125 11:45:27.280"/>
+<msg timestamp="20211201 11:37:06.320" level="INFO">${password} = icuGouwcw8</msg>
+<status status="PASS" starttime="20211201 11:37:06.301" endtime="20211201 11:37:06.320"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${passwordConfirmation}</var>
 <arg>id:senha</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:27.293" level="INFO">${passwordConfirmation} = ifaDJ6YGns</msg>
-<status status="PASS" starttime="20211125 11:45:27.281" endtime="20211125 11:45:27.293"/>
+<msg timestamp="20211201 11:37:06.331" level="INFO">${passwordConfirmation} = icuGouwcw8</msg>
+<status status="PASS" starttime="20211201 11:37:06.320" endtime="20211201 11:37:06.331"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${cellPhoneDDD}</var>
 <arg>id:celular</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:27.315" level="INFO">${cellPhoneDDD} = (87) 98468-9058</msg>
-<status status="PASS" starttime="20211125 11:45:27.294" endtime="20211125 11:45:27.316"/>
+<msg timestamp="20211201 11:37:06.351" level="INFO">${cellPhoneDDD} = (75) 98855-2524</msg>
+<status status="PASS" starttime="20211201 11:37:06.332" endtime="20211201 11:37:06.351"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${cellPhoneNumber}</var>
 <arg>id:celular</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:27.328" level="INFO">${cellPhoneNumber} = (87) 98468-9058</msg>
-<status status="PASS" starttime="20211125 11:45:27.316" endtime="20211125 11:45:27.328"/>
+<msg timestamp="20211201 11:37:06.361" level="INFO">${cellPhoneNumber} = (75) 98855-2524</msg>
+<status status="PASS" starttime="20211201 11:37:06.351" endtime="20211201 11:37:06.361"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>http://hsmonline.com.br/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20211125 11:45:27.329" level="INFO">Opening url 'http://hsmonline.com.br/'</msg>
-<status status="PASS" starttime="20211125 11:45:27.329" endtime="20211125 11:45:29.341"/>
+<msg timestamp="20211201 11:37:06.362" level="INFO">Opening url 'http://hsmonline.com.br/'</msg>
+<status status="PASS" starttime="20211201 11:37:06.362" endtime="20211201 11:37:08.045"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Sem saúde mental não tem saúde!</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211125 11:45:29.342" endtime="20211125 11:45:29.354"/>
+<status status="PASS" starttime="20211201 11:37:08.045" endtime="20211201 11:37:08.057"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>MedPass &amp; Hospital Santa Mônica</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20211125 11:45:29.359" level="INFO">Page title is 'MedPass &amp; Hospital Santa Mônica'.</msg>
-<status status="PASS" starttime="20211125 11:45:29.355" endtime="20211125 11:45:29.359"/>
+<msg timestamp="20211201 11:37:08.062" level="INFO">Page title is 'MedPass &amp; Hospital Santa Mônica'.</msg>
+<status status="PASS" starttime="20211201 11:37:08.057" endtime="20211201 11:37:08.062"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>//*[@id="root"]/div/div/div[2]/button</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:29.360" level="INFO">Clicking button '//*[@id="root"]/div/div/div[2]/button'.</msg>
-<status status="PASS" starttime="20211125 11:45:29.360" endtime="20211125 11:45:29.434"/>
+<msg timestamp="20211201 11:37:08.062" level="INFO">Clicking button '//*[@id="root"]/div/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20211201 11:37:08.062" endtime="20211201 11:37:08.128"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:30.444" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20211125 11:45:29.435" endtime="20211125 11:45:30.444"/>
+<msg timestamp="20211201 11:37:09.133" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211201 11:37:08.129" endtime="20211201 11:37:09.133"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Cadastre-se para liberar sua consulta gratuita</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20211125 11:45:30.444" endtime="20211125 11:45:30.454"/>
+<status status="PASS" starttime="20211201 11:37:09.133" endtime="20211201 11:37:09.142"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:fullName</arg>
 <arg>${fullName}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:30.455" level="INFO">Typing text 'Elaine Simone Viana' into text field 'name:fullName'.</msg>
-<status status="PASS" starttime="20211125 11:45:30.455" endtime="20211125 11:45:30.591"/>
+<msg timestamp="20211201 11:37:09.143" level="INFO">Typing text 'Iago Vitor Monteiro' into text field 'name:fullName'.</msg>
+<status status="PASS" starttime="20211201 11:37:09.143" endtime="20211201 11:37:09.217"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:31.094" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:30.591" endtime="20211125 11:45:31.094"/>
+<msg timestamp="20211201 11:37:09.730" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:09.217" endtime="20211201 11:37:09.730"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:user.email</arg>
 <arg>${user.email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:31.095" level="INFO">Typing text 'elainesimoneviana..elainesimoneviana@gap.com.br' into text field 'name:user.email'.</msg>
-<status status="PASS" starttime="20211125 11:45:31.095" endtime="20211125 11:45:31.273"/>
+<msg timestamp="20211201 11:37:09.731" level="INFO">Typing text 'iiagovitormonteiro@leonardocordeiro.com' into text field 'name:user.email'.</msg>
+<status status="PASS" starttime="20211201 11:37:09.730" endtime="20211201 11:37:09.817"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:31.775" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:31.274" endtime="20211125 11:45:31.775"/>
+<msg timestamp="20211201 11:37:10.328" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:09.818" endtime="20211201 11:37:10.328"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:document</arg>
 <arg>${document}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:31.776" level="INFO">Typing text '954.653.973-22' into text field 'name:document'.</msg>
-<status status="PASS" starttime="20211125 11:45:31.775" endtime="20211125 11:45:31.876"/>
+<msg timestamp="20211201 11:37:10.329" level="INFO">Typing text '135.106.701-08' into text field 'name:document'.</msg>
+<status status="PASS" starttime="20211201 11:37:10.328" endtime="20211201 11:37:10.399"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:32.379" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:31.877" endtime="20211125 11:45:32.379"/>
+<msg timestamp="20211201 11:37:10.908" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:10.400" endtime="20211201 11:37:10.908"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:birthDate</arg>
 <arg>${birthDate}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:32.380" level="INFO">Typing text '11/06/1966' into text field 'name:birthDate'.</msg>
-<status status="PASS" starttime="20211125 11:45:32.380" endtime="20211125 11:45:32.471"/>
+<msg timestamp="20211201 11:37:10.909" level="INFO">Typing text '12/11/1980' into text field 'name:birthDate'.</msg>
+<status status="PASS" starttime="20211201 11:37:10.908" endtime="20211201 11:37:10.978"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:32.987" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:32.472" endtime="20211125 11:45:32.987"/>
+<msg timestamp="20211201 11:37:11.485" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:10.979" endtime="20211201 11:37:11.485"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>name:user.password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:32.988" level="INFO">Typing password into text field 'name:user.password'.</msg>
-<msg timestamp="20211125 11:45:33.031" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20211125 11:45:33.083" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20211125 11:45:32.987" endtime="20211125 11:45:33.083"/>
+<msg timestamp="20211201 11:37:11.486" level="INFO">Typing password into text field 'name:user.password'.</msg>
+<msg timestamp="20211201 11:37:11.516" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20211201 11:37:11.550" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20211201 11:37:11.485" endtime="20211201 11:37:11.550"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:33.596" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:33.091" endtime="20211125 11:45:33.596"/>
+<msg timestamp="20211201 11:37:12.063" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:11.550" endtime="20211201 11:37:12.063"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:user.passwordConfirmation</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:33.597" level="INFO">Typing text 'ifaDJ6YGns' into text field 'name:user.passwordConfirmation'.</msg>
-<status status="PASS" starttime="20211125 11:45:33.596" endtime="20211125 11:45:33.682"/>
+<msg timestamp="20211201 11:37:12.064" level="INFO">Typing text 'icuGouwcw8' into text field 'name:user.passwordConfirmation'.</msg>
+<status status="PASS" starttime="20211201 11:37:12.063" endtime="20211201 11:37:12.130"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:34.188" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:33.683" endtime="20211125 11:45:34.188"/>
+<msg timestamp="20211201 11:37:12.632" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:12.130" endtime="20211201 11:37:12.632"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:cellPhoneDDD</arg>
 <arg>48</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:34.189" level="INFO">Typing text '48' into text field 'name:cellPhoneDDD'.</msg>
-<status status="PASS" starttime="20211125 11:45:34.188" endtime="20211125 11:45:34.272"/>
+<msg timestamp="20211201 11:37:12.633" level="INFO">Typing text '48' into text field 'name:cellPhoneDDD'.</msg>
+<status status="PASS" starttime="20211201 11:37:12.632" endtime="20211201 11:37:12.692"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:34.781" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:34.273" endtime="20211125 11:45:34.781"/>
+<msg timestamp="20211201 11:37:13.206" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:12.693" endtime="20211201 11:37:13.206"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:cellPhoneNumber</arg>
 <arg>991589775</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:34.782" level="INFO">Typing text '991589775' into text field 'name:cellPhoneNumber'.</msg>
-<status status="PASS" starttime="20211125 11:45:34.782" endtime="20211125 11:45:34.870"/>
+<msg timestamp="20211201 11:37:13.207" level="INFO">Typing text '991589775' into text field 'name:cellPhoneNumber'.</msg>
+<status status="PASS" starttime="20211201 11:37:13.206" endtime="20211201 11:37:13.273"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:35.374" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:34.871" endtime="20211125 11:45:35.374"/>
+<msg timestamp="20211201 11:37:13.788" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:13.274" endtime="20211201 11:37:13.788"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>class:check-mark</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211125 11:45:35.375" level="INFO">Clicking element 'class:check-mark'.</msg>
-<status status="PASS" starttime="20211125 11:45:35.375" endtime="20211125 11:45:35.429"/>
+<msg timestamp="20211201 11:37:13.789" level="INFO">Clicking element 'class:check-mark'.</msg>
+<status status="PASS" starttime="20211201 11:37:13.788" endtime="20211201 11:37:13.823"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>0.5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211125 11:45:35.937" level="INFO">Slept 500 milliseconds</msg>
-<status status="PASS" starttime="20211125 11:45:35.430" endtime="20211125 11:45:35.937"/>
+<msg timestamp="20211201 11:37:14.339" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20211201 11:37:13.824" endtime="20211201 11:37:14.339"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${user.email}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211125 11:45:35.938" level="INFO">elainesimoneviana..elainesimoneviana@gap.com.br</msg>
-<status status="PASS" starttime="20211125 11:45:35.937" endtime="20211125 11:45:35.938"/>
+<msg timestamp="20211201 11:37:14.340" level="INFO">iiagovitormonteiro@leonardocordeiro.com</msg>
+<status status="PASS" starttime="20211201 11:37:14.339" endtime="20211201 11:37:14.340"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${user.email}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211125 11:45:35.938" endtime="20211125 11:45:35.939"/>
+<status status="PASS" starttime="20211201 11:37:14.340" endtime="20211201 11:37:14.340"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${password}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20211125 11:45:35.940" level="INFO">ifaDJ6YGns</msg>
-<status status="PASS" starttime="20211125 11:45:35.939" endtime="20211125 11:45:35.940"/>
+<msg timestamp="20211201 11:37:14.341" level="INFO">icuGouwcw8</msg>
+<status status="PASS" starttime="20211201 11:37:14.340" endtime="20211201 11:37:14.341"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${password}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20211125 11:45:35.940" endtime="20211125 11:45:35.941"/>
+<status status="PASS" starttime="20211201 11:37:14.341" endtime="20211201 11:37:14.341"/>
 </kw>
 <kw name="Encerra sessão" library="hsmBase" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211125 11:45:36.252" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211125 11:45:35.942" endtime="20211125 11:45:36.252"/>
+<msg timestamp="20211201 11:37:14.613" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211201 11:37:14.342" endtime="20211201 11:37:14.613"/>
 </kw>
-<status status="PASS" starttime="20211125 11:45:35.941" endtime="20211125 11:45:36.252"/>
+<status status="PASS" starttime="20211201 11:37:14.342" endtime="20211201 11:37:14.614"/>
 </kw>
-<status status="PASS" starttime="20211125 11:45:19.360" endtime="20211125 11:45:36.253"/>
+<status status="PASS" starttime="20211201 11:36:56.484" endtime="20211201 11:37:14.614"/>
 </test>
-<status status="PASS" starttime="20211125 11:45:19.042" endtime="20211125 11:45:36.254"/>
+<status status="PASS" starttime="20211201 11:36:56.236" endtime="20211201 11:37:14.615"/>
 </suite>
 <statistics>
 <total>
